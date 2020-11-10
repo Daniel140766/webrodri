@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <br>
+    <br>
+    <br>
+   <center><h2><i>DONACION DE ARBOLES, PLANTAS Y COMPOSTA</i></h2></center><br>
+ <center><hr></center> <br> 
+   <center>
+            <p><b> Unidad normativa:</b> ESTUDIANTES POR DEL MEDIO AMBIENTE</p><br>
+            <P>Servicio mediante el cual el CBTis 83 dona árboles, plantas y composta a las personas interesadas en</p>
+                <p>proteger y conservar el medio ambiente, a través de la plantación de árboles y diferentes especies vegetales.</P>
+<br>
+                        <p><b>Este servicio lo realiza: </b></p>
+                        <p>Persona física. Interesada que requiera donación de árboles, plantas y composta.</p><br><br>
+
+
+
+
+                        <h3>Este servicio se realiza en diferentes alcaldías, selecciona la alcaldía de tu interés
+                        <br>para que la información del trámite se muestre como corresponde</h3><br>
+                        <form action="">
+                        <select name="OS" style="background-color:transparent;">
+                            <option value="a">Selecciona el pueblo donde se realizara el servicio</option>
+                            <option value="1">Boxta</option>
+                            <option value="2">la Estancia </option>
+                            <option value="3">Caxuxi</option>
+                            <option value="10">La floresta</option>
+                            <option value="11">Parque urbano</option>
+
+                         </select><br><br>
+                     <label>  Nombre del donador:</label>  
+                         <input type="text" name="nombre" id="nombre" placeholder="Nombre del donador" style="background-color:transparent;"  >
+                         <label> cantidad a donar</label>
+                         <input type="text" name="donar" placeholder="cantidad a donar" id="donar" style="background-color:transparent;" >
+                         <input type="submit" value="ENVIAR" onclick="hizoClick()" >
+                        </form>
+   </center>
+   <br>
+   <br>
+   <br>
+   <center>
+   
+   <fieldset>
+<legend>Requisitos</legend>
+<h3>01 DOCUMENTOS DE IDENTIFICACION OFICIAL</h3><br>
+ <h4>credencial para votar- original-1 copia(s)</h4><br>
+ <ol type="A">
+    <li>Pasaporte - original y 1 copia(s)</li>
+    <li>Cédula Profesional - original y 1 copia(s)</li>
+    <li>Cartilla del Servicio Militar Nacional - original y 1 copia(s)</li>
+    
+  </ol>
+   </fieldset>
+  
+</center>
+<script>
+    function hizoClick() {
+      var nombre = document.getElementById("nombre").value;
+      var correo = document.getElementById("donar").value;
+      if (nombre == "" || donar == "") {
+          alert("Debes completar los 3 campos"); 
+      } else {
+      alert("Felicidades..!!!!! Gracias por su apoyo al medio ambiente ");
+      }
+    }
+    </script>
+</body>
+</html>
